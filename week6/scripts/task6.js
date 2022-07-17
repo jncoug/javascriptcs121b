@@ -17,7 +17,7 @@ function setWeather(weather) {
 async function getWeather() {
 
     let zip = document.querySelector('#zipcode').value;
-    let url = "http://api.weatherapi.com/v1/current.json?key=2b01551f4eeb4fcc92642141221707&q=" + zip + "&aqi=no"
+    let url = "https://api.weatherapi.com/v1/current.json?key=2b01551f4eeb4fcc92642141221707&q=" + zip + "&aqi=no"
 
     const response = await fetch(url);
     console.log("Waiting for weather");
